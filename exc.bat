@@ -4,7 +4,7 @@ setlocal
 title %random% %date% %username% %time% %random%
 
 :-------------------------------------
-rem  --> Check for permissions
+rem Check for permissions
     if "%PROCESSOR_ARCHITECTURE%" EQU "amd64" (
 >nul 2>&1 "%SYSTEMROOT%\SysWOW64\cacls.exe" "%SYSTEMROOT%\SysWOW64\config\system"
 ) else (
